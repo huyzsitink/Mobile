@@ -92,6 +92,13 @@ Tabs.Main1:AddButton({
     Title="Get Banned 😈",
     Description="Kaitun Blox Fruits A-Z",
     Callback=function()
-	  gg
+	  local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+while true do
+    local textToSend = "Blox Fruits Như Lồn Report Tao Đi"
+    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(textToSend, "All")
+
+    wait()
+			end
   end
 })
