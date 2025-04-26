@@ -1,3 +1,15 @@
+print("Break");
+local v0 = require(game:GetService("ReplicatedStorage").Notification);
+v0.new("<Color=Cyan>Blox Fruits Script<Color=/>"):Display();
+wait(0.5);
+v0.new("<Color=Yellow>Mobile<Color=/>"):Display();
+wait(1);
+repeat
+    wait();
+until game.Players.LocalPlayer
+if  not game:IsLoaded() then
+    game.Loaded:Wait();
+end
 local ScreenGui = Instance.new("ScreenGui")
 local ImageButton = Instance.new("ImageButton")
 local UICorner = Instance.new("UICorner")
@@ -77,9 +89,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/huyzsitink/Mobile/ref
 })
 
 Tabs.Main1:AddButton({
-    Title="KaiTun",
+    Title="Get Banned 😈",
     Description="Kaitun Blox Fruits A-Z",
     Callback=function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/huyzsitink/Mobile/refs/heads/main/MainMobile.lua"))()
+	  gg
   end
 })
