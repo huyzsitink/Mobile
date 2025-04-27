@@ -104,98 +104,59 @@ spawn(function()
 		timeLabel.Text = "Time: " .. hrs .. " Hours " .. mins .. " Minutes " .. secs .. " Seconds"
 	end
 end)
-getgenv().ConfigsKaitun = {
-	["Safe Mode"] = false, -- Will be pass all anti cheat (but slow farm)
-	
-	["Melee"] = {
-		["Death Step"] = true,
-		["Electric Claw"] = true,
-		["Dragon Talon"] = true,
-		["Sharkman Karate"] = true,
-		["Superhuman"] = true,
-		["God Human"] = true,
-	},
-
-	["Sword"] = {
-		-- : World 1
-		["Saber"] = true,
-		["Pole"] = true,
-		-- : World 2
-		["Midnight Blade"] = true,
-		["Shisui"] = true,
-		["Saddi"] = true,
-		["Wando"] = true,
-		["Rengoku"] = true,
-		["True Triple Katana"] = true,
-		-- : World 3
-		["Yama"] = true,
-		["Tushita"] = true,
-		["Canvander"] = true,
-		["Buddy Sword"] = true,
-		["Twin Hooks"] = true,
-		["Hallow Scythe"] = true,
-		["Cursed Dual Katana"] = true,
-	},
-
-	["Gun"] = {
-		-- : World 2
-		["Kabucha"] = true,
-		-- : World 3
-		["Venom Bow"] = true,
-		["Skull Guitar"] = true,
-	},
-
-	["Mastery"] = {
-		["Melee"] = true,
-		["Sword"] = true,
-		["Devil Fruits"] = false,
-
-		["Configs"] = {
-			["Selected All Sword"] = true,
-			["Select Sword"] = {"Cursed Dual Katana"},
-		}
-	},
-
-	["Race"] = {
-		["v2"] = true,
-		["v3"] = true,
-		["Locked"] = {
-			["Mink"] = true,
-			["Human"] = true,
-			["Skypiea"] = true,
-			["Fishman"] = true,
-		},
-	},
-
-	["Fruit"] = {
-		["Main Fruit"] = {"Dragon-Dragon"},
-		["Sec Fruit"] = {"Dragon-Dragon"},
-		["Safe Fruit"] = {
-			"Dough-Dough",
-			"Dragon-Dragon"
-		},
-	},
-
-	["Quest"] = {
-		["Rainbow Haki"] = true,
-		["Pull Lever"] = true,
-		["Musketeer Hat"] = true,
-		["Dough Mirror"] = true,
-		["Shark Anchor"] = {
-			["Enable"] = true,
-			["Money"] = 100_000_000,
-		},
-	},
-
-	["Currency"] = {
-		["Lock Fragment"] = 100_000,
-	},
-
-	["Performance"] = {
-		["White Screen"] = false,
-		["Booster FPS"] = true,
-		["Lock FPS"] = 240,
-		["AFK Timeout"] = 150,
-	},
+getgenv().Hide_UI = true
+getgenv().BlackScreen = false
+_G.HopFruit1M = false
+_G.KaitunConfig = {
+    ["Actions Allowed"] = {
+      ["Awakening Fruit"] = true,
+      ["Shark Anchor"] = true,
+      ["Mirror Fractal"] = true,
+      ["Soul Guitar"] = true,
+      ["Pole (1st Form)"] = true,
+      ["Upgrading Race"] = true,
+      ["Farming Boss Drop When Maxed Level"] = false,
+      ["Rainbown Haki"] = true,
+      ["Cursed Dual Katana"] = true,
+      ["Buy accessories"] = true,
+      ["Buy Hakis"] = true,
+      ["Buy Guns"] = true,
+      ["Buy Swords"] = true,
+      ["Upgrade Weapons"] = true,
+      ["Farming Boss Drops When X2 Expired"] = true,
+      ["Mirage Puzzle"] = true,
+      ["Saber"] = true
+    },
+    ["Fps Boosting"] = true,
+    ["Fruit Snipping"] = true,
+    ["Fruit Eating"] = false,
+    ["High Ping Hop"] = true,
+    ["Fruit Choosen"] = {
+      ["T-Rex-T-Rex"] = true,
+      ["Shadow-Shadow"] = true,
+      ["Mammoth-Mammoth"] = true,
+      ["Gravity-Gravity"] = true,
+      ["Spirit-Spirit"] = true,
+      ["Dark-Dark"] = true,
+      ["Rocket-Rocket"] = true,
+      ["Control-Control"] = true,
+      ["Dough-Dough"] = true,
+      ["Leopard-Leopard"] = true,
+      ["Venom-Venom"] = true,
+      ["Dragon-Dragon"] = true,
+      ["Diamond-Diamond"] = true,
+      ["Kitsune-Kitsune"] = true,
+      ["Spring-Spring"] = true
+    },
+    ["Player Nearing Hop"] = true,
+    ["Allow Stored"] = true,
+    ["Race Choosen"] = {
+      ["Human"] = true
+    },
+    ["Race Snipping"] = true,
+    ["Tween Speed"] = 350,
+    ["Same Y Tween"] = true,
 }
-loadstring(game:HttpGet("https://api.realaya.xyz/v1/files/l/73mkp0aqyfo4ypy8hvl0nz10lq49fey5.lua"))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/memaybeohub/NewPage/main/Kaitun.lua'))()
+
+end)
