@@ -93,7 +93,20 @@ Tabs.Main1:AddButton({
     Description="Kaitun Blox Fruits A-Z",
     Callback=function()
 	  local ReplicatedStorage = game:GetService("ReplicatedStorage")
+})
+    
+    Tabs.Main1:AddButton({
+    Title="KaiTun",
+    Description="Script Kaitun Premium",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/huyzsitink/Mobile/refs/heads/main/MainMobile.lua"))()
+  end
+})
 while true do
     local textToSend = "Blox Fruits Như Lồn Report Tao Đi"
     ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(textToSend, "All")
