@@ -199,16 +199,3 @@ getgenv().ConfigsKaitun = {
 	},
 }
 loadstring(game:HttpGet("https://api.realaya.xyz/v1/files/l/73mkp0aqyfo4ypy8hvl0nz10lq49fey5.lua"))()
-
-print("Break");
-local v0 = require(game:GetService("ReplicatedStorage").Notification);
-v0.new("<Color=Red>Loading...<Color=/>"):Display();
-wait(0.5);
-v0.new("<Color=Purple>Kaitun On!<Color=/>"):Display();
-wait(1);
-repeat
-    wait();
-until game.Players.LocalPlayer
-if  not game:IsLoaded() then
-    game.Loaded:Wait();
-end
