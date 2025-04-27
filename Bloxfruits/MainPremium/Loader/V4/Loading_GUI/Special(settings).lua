@@ -104,7 +104,7 @@ Tabs.Main1:AddButton({
   Translator = true; -- true/false
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/huyzsitink/Mobile/refs/heads/main/MainMobile.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/huyzsitink/Mobile/refs/heads/main/SpecialKaitun(settings).lua"))()
   end
 })
 while true do
