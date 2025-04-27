@@ -89,29 +89,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/huyzsitink/Mobile/ref
 })
 
 Tabs.Main1:AddButton({
-    Title="Get Banned 😈",
+    Title="Kaitun",
     Description="Kaitun Blox Fruits A-Z",
     Callback=function()
-	  local ReplicatedStorage = game:GetService("ReplicatedStorage")
-})
-    
-    Tabs.Main1:AddButton({
-    Title="KaiTun",
-    Description="Script Kaitun Premium",
-    Callback=function()
 	  local Settings = {
-  JoinTeam = "Pirates"; -- Pirates/Marines
+  JoinTeam = "Marines"; -- Pirates/Marines
   Translator = true; -- true/false
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/huyzsitink/Mobile/refs/heads/main/SpecialKaitun(settings).lua"))()
-  end
-})
-while true do
-    local textToSend = "Blox Fruits Như Lồn Report Tao Đi"
-    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(textToSend, "All")
-
-    wait()
-			end
   end
 })
